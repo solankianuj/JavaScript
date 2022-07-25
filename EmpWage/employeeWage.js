@@ -3,10 +3,9 @@ const IS_Full_Time=1;
 const part_Time_Hr=4;
 const full_time_hr=8;
 const wage_per_Hr=20;
+const num_Of_Working=2;
 
 let empHr=0;
-let empcheck=Math.floor(Math.random()*10)%3;
-
 function getWorkingHr(empcheck) {
     switch (empcheck) {
         case IS_Full_Time: return full_time_hr;
@@ -19,6 +18,12 @@ function getWorkingHr(empcheck) {
     }
     
 }
-empHr=getWorkingHr(empcheck);
+
+for (let i = 0; i < num_Of_Working; i++) {
+    let empcheck=Math.floor(Math.random()*10)%3;
+    empHr +=getWorkingHr(empcheck);
+    
+}
+
 let empWage=empHr*wage_per_Hr;
 console.log("Employe Daily Wage IS : "+empWage);
