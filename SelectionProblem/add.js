@@ -1,0 +1,13 @@
+<html>
+    <body>
+    <script>
+    let  x = prompt( "please enter first digit", "Type your num");
+var y = prompt( "please enter first digit", "Type your num");
+ 
+
+var num1=parseInt(x);
+ var num2= parseInt(y);
+alert( num1+num2);
+    </script>
+    </body>
+</html>
